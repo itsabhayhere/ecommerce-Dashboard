@@ -1,0 +1,333 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navBox li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navBox li a{
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navBox{
+  padding: 5px;
+  margin: 0;
+  background-color: skyblue;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: skyblue;
+}
+.Register {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-top: 6rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inpF {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.inpF:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.subBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+.logo{
+  width: 5%;                                
+  display: block;    
+  float: left;   
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left:20px;
+}
+
+
+/* Container for the form */
+.product {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.product h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Styling for input boxes */
+.inputBox {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Focused input styling */
+.inputBox:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: Add some spacing between form elements */
+form > .inputBox {
+  margin-bottom: 12px;
+}
+
+
+.invalid-input{
+  color: red;
+  margin-top: 8px;
+  display: block;
+  margin-left: 0;
+}
+
+/* General styling for the product list container */
+.product-list {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.product-list h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for the header row */
+.product-list ul {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.product-list ul li {
+  flex: 1;
+  text-align: center;
+  
+  padding: 8px;
+}
+
+/* Styling for individual product rows */
+.product-list ul.product-row {
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list ul.product-row:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.product-list ul.product-row:hover {
+  background-color: #f1f1f1; /* Hover effect on rows */
+}
+
+/* Styling for individual list items in product rows */
+.product-list ul.product-row li {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+.search-boxs{
+  padding-left: 15px;
+  width: 400px;
+  margin: 20px;
+  height: 30px;
+  border: 1px solid skyblue;
+}
+/* Button styling */
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Style for Delete button */
+button.delete {
+  background-color: #FF4136;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #e60000;
+}
+
+/* Style for Update button */
+button.update {
+  background-color: #28a745;
+  color: white;
+}
+
+button.update:hover {
+  background-color: #218838;
+}
+
+/* Add some space between buttons */
+.product-list .product-row button {
+  margin: 0 5px;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .product-list {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .product-list h3 {
+    font-size: 20px;
+  }
+
+  .product-list ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .product-list ul li {
+    text-align: left;
+    padding: 8px;
+  }
+
+  .product-list .product-row {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .product-list .product-row li {
+    padding: 8px;
+  }
+
+  
+}
